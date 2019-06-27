@@ -2,6 +2,6 @@
 
 from django.apps import AppConfig
 
-class HockeyStatsConfig(AppConfig):
+class HockeystatsConfig(AppConfig):
     """Provides config information about the Ob app."""
     name = 'hockeystats'
