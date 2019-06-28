@@ -19,3 +19,6 @@ venv
 
 ### JetBrains ###
 .idea
+
+### DB ###
+db.*

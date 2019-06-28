@@ -30,7 +30,7 @@ class Command(BaseCommand):
         :return:
         """
         driver = webdriver.Firefox()
-        driver.get('http://www.nhl.com/stats/player?report=skaterpercentages&reportType=season&seasonFrom=20182019&seasonTo=20182019&gameType=2&position=D&filter=gamesPlayed,gte,30&sort=shotAttemptsPctg')
+        driver.get('http://www.nhl.com/stats/player?report=skaterpercentages&reportType=season&seasonFrom=20182019&seasonTo=20182019&gameType=2&filter=gamesPlayed,gte,30&sort=shotAttemptsPctg')
         try:
             elements = driver.find_elements_by_css_selector('.rt-tr')
             for index, element in enumerate(elements):
